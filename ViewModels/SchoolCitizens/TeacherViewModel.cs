@@ -19,13 +19,6 @@ namespace MenuProject.ViewModels.SchoolCitizens
 
         public TeacherViewModel()
         {
-            UpdateView();
-        }
-
-        public void UpdateView()
-        {
-            List<Teacher> teachers = _teacherRepo.FindAll();
-            Teachers = new ObservableCollection<Teacher>(teachers);
         }
     }
 }

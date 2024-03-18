@@ -24,36 +24,6 @@ namespace MenuProject.ViewModels.SchoolCitizens
         public StudentViewModel()
         {
             _selectedStudent = new Student();
-            UpdateView();
-        }
-
-        [RelayCommand]
-        public void DoSave(Student student)
-        {
-            if (student.HasId)
-                _studentRepo.Update(student);
-            else
-                _studentRepo.Insert(student);
-            UpdateView();
-        }
-
-        [RelayCommand]
-        void DoNewStudent()
-        {
-            SelectedStudent = new Student();
-        }
-
-        [RelayCommand]
-        public void DoRemove(Student studentToDelete)
-        {
-            _studentRepo.Delete(studentToDelete);
-            UpdateView();
-        }
-
-        private void UpdateView()
-        {
-            EducationLevels = new ObservableCollection<string>(_educationLevelsRepo.FindAll());
-            Students = new ObservableCollection<Student>(_studentRepo.FindAll());
-        }
+        }      
     }
 }

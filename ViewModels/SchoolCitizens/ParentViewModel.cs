@@ -19,13 +19,6 @@ namespace MenuProject.ViewModels.SchoolCitizens
 
         public ParentViewModel()
         {
-            UpdateView();
-        }
-
-        public void UpdateView()
-        {
-            List<Parent> parents=_parentRepo.FindAll();
-            Parents=new ObservableCollection<Parent>(parents);
         }
     }
 }

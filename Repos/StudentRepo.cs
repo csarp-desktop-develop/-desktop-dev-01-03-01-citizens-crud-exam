@@ -71,30 +71,6 @@ namespace MenuProject.Repos
         public List<Student> FindAll()
         {
             return _students;
-        }
-        public void Insert(Student student)
-        {
-            _students.Add(student);
-        }
-
-        public void Update(Student student)
-        {
-            if (!student.HasId)
-            {
-                Insert(student);
-            }
-            else
-            {
-                Student? studentToUpdate = _students.FirstOrDefault(s => s.Id == student.Id);
-                studentToUpdate?.Set(student);
-            }
-        }
-
-        public void Delete(Student student)
-        {
-            _students.Remove(student);
-        }
-
-
+        }        
     }
 }
