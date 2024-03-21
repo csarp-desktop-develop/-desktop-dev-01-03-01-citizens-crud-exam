@@ -19,11 +19,10 @@ namespace MenuProject.ViewModels.SchoolCitizens
         private ObservableCollection<Student> _students = new();
 
         [ObservableProperty]
-        private Student _selectedStudent;        
+        private Student _selectedStudent = new();        
         
         public StudentViewModel()
         {
-            _selectedStudent = new Student();
         }      
     }
 }

@@ -38,5 +38,12 @@ namespace MenuProject.ViewModels
             ChildViewModel = new ParentViewModel();
             StatusBarText = "Szülői adatok kezelése";
         }
+
+        [RelayCommand]
+        private void ShowSubjectView() 
+        {
+            ChildViewModel = new SubjectViewModel();
+            StatusBarText = "Tantárgyak kezelése";
+        }
     }
 }

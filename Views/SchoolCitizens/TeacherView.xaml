@@ -10,6 +10,13 @@
     <UserControl.DataContext>
         <viewmodel:TeacherViewModel />
     </UserControl.DataContext>
+    <d:DesignerProperties.DesignStyle>
+        <Style TargetType="UserControl">
+            <Setter Property="Background" Value="White" />
+            <Setter Property="Height" Value="700" />
+            <Setter Property="Width" Value="900" />
+        </Style>
+    </d:DesignerProperties.DesignStyle>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"></ColumnDefinition>
