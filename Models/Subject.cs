@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Kreta.Desktop.Models
+namespace MenuProject.Models
 {
     public class Subject
     {

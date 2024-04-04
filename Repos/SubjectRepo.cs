@@ -1,8 +1,8 @@
-﻿using Kreta.Desktop.Models;
+﻿using MenuProject.Models;
 using System;
 using System.Collections.Generic;
 
-namespace Kreta.Desktop.Repos
+namespace MenuProject.Repos
 {
     class SubjectRepo
     {

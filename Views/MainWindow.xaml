@@ -20,6 +20,10 @@
         <DataTemplate DataType="{x:Type viewmodel:SubjectViewModel}">
             <view:SubjectView/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type viewmodel:SchoolClassViewModel}">
+            <view:SchoolClassView/>
+        </DataTemplate>
+
         <DataTemplate DataType="{x:Type citizensviewmodel:StudentViewModel}">
             <citizensview:StudentView/>
         </DataTemplate>
@@ -49,6 +53,7 @@
                 <MenuItem Header="_Tanárok" Command="{Binding ShowTeacherViewCommand}" />
                 <MenuItem Header="_Szülők" Command="{Binding ShowParantViewCommand}" />
                 <MenuItem Header="Tantárgyak" Command="{Binding ShowSubjectViewCommand}" />
+                <MenuItem Header="Osztályok" Command="{Binding ShowSchoolClassViewCommand}" />
             </MenuItem>
         </Menu>
         <ContentControl Grid.Row="1" Grid.Column="0" Content="{Binding ChildViewModel}"></ContentControl>

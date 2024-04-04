@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using Kreta.Desktop.Models;
-using Kreta.Desktop.Repos;
+using MenuProject.Models;
+using MenuProject.Repos;
 using MenuProject.ViewModels.Base;
 using System.Collections.ObjectModel;
 
